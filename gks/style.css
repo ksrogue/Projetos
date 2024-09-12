@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 400px;
+    background-color: rgb(255, 207, 229);
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: 'Style Script';
+}
+
+p {
+    font-family: 'Style Script';
+    font-size: 20px;
+    line-height: 18px;
+    margin: 15px 5px;
+    text-indent: 2.5px;
+}
