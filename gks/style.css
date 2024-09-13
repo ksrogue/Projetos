@@ -14,6 +14,18 @@ body {
     
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    background-image: url(/gks/img/BackGround.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: #FFF;
+    text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;
 }
 
 .main {
@@ -23,20 +35,81 @@ body {
     align-items: center;
 
     width: 400px;
-    background-color: rgb(255, 207, 229);
+    background-color: rgba(24, 24, 24, 0.678);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
 }
 
 h1 {
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
+    margin-top: 20px;
     font-family: 'Style Script';
+    
 }
 
 p {
     font-family: 'Style Script';
-    font-size: 20px;
-    line-height: 18px;
+    font-size: 22px;
+    line-height: 20px;
     margin: 15px 5px;
     text-indent: 2.5px;
+    color: #FFF;
+
 }
+
+.digital {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.digital-buton {
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: .5s ease-in-out;
+}
+
+.digital-buton:hover {
+    transform: scale(1.1);
+}
+
+.imagem {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.imagem img {
+    width: 50%;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+
+    animation: pulse 1s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1); }
+}
+
+.show {
+    display: none;
+}
+
+.begin {
+    font-family: 'Cedarville Cursive';
+    font-size: 32px;
+    background-color: #000;
+    color: #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+
+    transition: .5s ease-in-out;
+}
+.begin:hover {
+    transform: scale(1.1);
+}
+

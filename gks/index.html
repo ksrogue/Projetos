@@ -8,7 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="main">
+    <button class="begin" onclick="begin()">COMEÇAR!!!</button>
+    <div class="main show">
+        <div class="imagem show">
+            <img src="img/Sarang.jpg" alt="">
+        </div>
         <div class="text">
             <h1 class="title">
                 🎉Feliz Aniversário, Dona Ks!🎉
@@ -17,16 +21,42 @@
                 Hoje é um dia bem especial, tu ta ficando um pouco mais idosa, né? kk 🥳
             </p>
             <p>
-                Apesar da distancia, nossa amizade continua forte. Lembro de todas as horas que passamos jogando e assistindo juntos, mesmo que virtualmente. Essas experiências sempre foram uma grande alegria pra mim, e sou grato por cada momento que passamos juntos. 🎮
+                Mesmo morando tão longe, nossa amizade continua forte. Lembro de todas as horas que passamos jogando e assistindo juntos, mesmo que virtualmente. Essas experiências sempre foram uma grande alegria pra mim, e sou grato por cada momento que passamos. 🎮
             </p>
             <p>
-                Espero que você tenha um ótimo dia, e que você receba todo o carinho e felicidade que merece. Que neste novo ano, todos os seus sonhos se tornem realidade e que você continue sendo essa pessoa foda que eu admiro muito. &#128536
+                Espero que você tenha um ótimo dia, e que você receba todo o carinho e felicidade que merece. Que todos os seus sonhos se tornem realidade e que você continue sendo essa pessoa foda que eu admiro tanto. &#128536
             </p>
             <p>
-                Obrigado por ser minha amiga, espero que nossa amizade dure muitos anos mais. Love U! &#128420
+                Obrigado por ser minha amiga, espero que nossa amizade dure muitos anos mais. Love You! &#128420
             </p>
-            <button>Aperta aí!</button>
+            
         </div>
+        <div class="digital">
+            <img src="img/Digital.png" alt="" class="digital-buton" onclick="digital()">
+
+        </div>
+        
     </div>
+
+
+    <script>
+        let imagem = document.querySelector(".imagem");
+        let texto = document.querySelector(".text");
+        let button = document.querySelector(".begin");
+        let main = document.querySelector(".main")
+        let audio = new Audio('img/parabens.mp3');
+
+        function begin() {
+            button.style.display = "none";
+            main.style.display = "flex";
+            audio.play();
+            audio.volume = 0.5;
+        }
+
+        function digital() {  
+            imagem.classList.toggle("show");
+            texto.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
