@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Style+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --shadow: 0px 10px 10px 0px rgba(0,0,0,0.3);
+    --title-font: 'Roboto', 'sans-serif';
+    --p-font: 'Poppins', 'sans-serif';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(158, 158, 158);
+}
+
+header {
+    background-color: rgb(44, 44, 44);
+    width: 100%;
+    padding: 12px;
+
+    color: #fff;
+    text-align: center;
+
+    box-shadow: var(--shadow);
+
+    & h1 {
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font-family: var(--title-font);
+    }
+    & p {
+        font-family: var(--p-font);
+    }
+}
+
+.game_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 36px;
+}
+
+.game {
+    border: 1px solid #000;
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+    box-shadow: var(--shadow);
+
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: all ease-in-out .5s;
+    
+    & .game_img {
+        width: 100%;
+        border-bottom: 1px solid #000;
+    }
+    & .game_description {
+        margin: 8px;
+        font-family: var(--p-font);
+        font-size: 16px;
+        line-height: 18px;
+    }
+    & .game_link {
+        color: #fff;
+        text-align: center;
+    }
+}
+.game:hover {
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: rgb(44, 44, 44);
+    width: 100vw;
+    text-align: center;
+    color: #fff;
+    font-family: var(--p-font);
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #000;
+
+    & a {
+        color: white;
+        transition: all ease-in-out .3s;
+    }
+    & a:hover {
+        color: rgb(255, 235, 124);
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .game {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .game {
+        width: 95%;
+    }
+}
