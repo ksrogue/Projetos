@@ -30,8 +30,8 @@ function initialize() {
     games.forEach((i => {
         game_container.innerHTML += `
         <li class="game">
-        <a href="${i.game_link}"  class="game_link" target="_blank">
-        <img src="${i.game_img}" alt="imagem do jogo ${i.game_name}" class="game_img">
+            <a href="${i.game_link}"  class="game_link" target="_blank">
+            <img src="${i.game_img}" alt="imagem do jogo ${i.game_name}" class="game_img">
         <h3 class="game_title">${i.game_name}</h3>
         </a>
     `;
